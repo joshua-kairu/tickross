@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+ Tickross
+
+ Simple show of Android vector path potentials
+
+ Copyright (C) 2016 Kairu Joshua Wambugu
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see http://www.gnu.org/licenses/.
+
+ -->
+
+<!-- The cross -->
+
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:width="120dp"
+
+    android:height="120dp"
+
+    android:viewportWidth="@integer/viewport_width"
+
+    android:viewportHeight="@integer/viewport_height"
+
+    >
+
+    <group
+
+        android:name="@string/group_tickcross"
+
+        android:pivotX="@integer/viewport_center_x"
+
+        android:pivotY="@integer/viewport_center_y"
+
+        >
+
+        <path
+
+            android:name="@string/name_cross"
+
+            android:pathData="@string/path_cross"
+
+            android:strokeWidth="@integer/stroke_width"
+
+            android:strokeLineCap="round"
+
+            android:strokeColor="@color/stroke_color"
+
+            />
+
+    </group>
+
+</vector>

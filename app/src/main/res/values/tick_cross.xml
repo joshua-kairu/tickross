@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+ Tickross
+
+ Simple show of Android vector path potentials
+
+ Copyright (C) 2016 Kairu Joshua Wambugu
+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see http://www.gnu.org/licenses/.
+
+ -->
+
+<!-- The information relevant to the vectors -->
+
+<resources>
+
+    <!-- geometry -->
+
+    <integer name="viewport_width">24</integer>
+    <integer name="viewport_height">24</integer>
+    <integer name="viewport_center_x">12</integer>
+    <integer name="viewport_center_y">12</integer>
+
+    <string name="path_tick">M4.8,13.4 L9,17.6 M10.4,16.2 L19.6,7</string>
+    <string name="path_cross">M6.4,6.4 L17.6,17.6 M6.4,17.6 L17.6,6.4</string>
+
+    <!-- names -->
+
+    <string name="name_tick">tick</string>
+    <string name="name_cross">cross</string>
+    <string name="group_tickcross">groupTickCross</string>
+
+    <!-- drawing -->
+
+    <integer name="stroke_width">2</integer>
+    <color name="stroke_color">@color/colorPrimary</color>
+
+    <!-- timing -->
+
+    <integer name="animation_duration">450</integer>
+
+</resources>
