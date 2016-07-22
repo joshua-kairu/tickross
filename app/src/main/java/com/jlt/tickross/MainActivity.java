@@ -1,10 +1,11 @@
 package com.jlt.tickross;
 
-import android.graphics.drawable.AnimatedVectorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.wnafee.vector.compat.AnimatedVectorDrawable;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -87,8 +88,13 @@ public class MainActivity extends AppCompatActivity {
 
         // 3. initialize animated vectors
 
-        tickToCrossAnimatedVectorDrawable = ( AnimatedVectorDrawable ) getDrawable( R.drawable.avd_tick_to_cross );
-        crossToTickAnimatedVectorDrawable = ( AnimatedVectorDrawable ) getDrawable( R.drawable.avd_cross_to_tick );
+        /*
+         while wnafee's readme.md recommends using ResourcesCompat to inflate animations in code
+         I seem unable to inflate it in this way without running into problems with casting from
+         wnafee's AnimatedVectorDrawable to the android AnimatedVectorDrawable
+         */
+        tickToCrossAnimatedVectorDrawable = AnimatedVectorDrawable.create( this, getResources(), R.drawable.avd_tick_to_cross );
+        crossToTickAnimatedVectorDrawable = AnimatedVectorDrawable.create( this, getResources(), R.drawable.avd_cross_to_tick );
 
         // 4. start with the tick
 

@@ -23,22 +23,27 @@
 
  -->
 
-<!-- rotate the cross to tick animation -->
+<!-- animation from cross to tick -->
 
 <objectAnimator
 
     xmlns:android="http://schemas.android.com/apk/res/android"
 
-    android:propertyName="rotation"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
 
-    android:valueType="floatType"
+    android:propertyName="pathData"
 
-    android:valueFrom="-180"
+    android:valueFrom="@string/path_cross"
 
-    android:valueTo="0"
+    android:valueTo="@string/path_tick"
+
+    android:valueType="pathType"
+
+    app:vc_valueType="pathType"
+
+    android:interpolator="@android:interpolator/accelerate_decelerate"
 
     android:duration="@integer/animation_duration"
 
-    android:interpolator="@android:interpolator/fast_out_slow_in"
-
     />
+

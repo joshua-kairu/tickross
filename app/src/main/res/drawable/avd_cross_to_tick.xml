@@ -40,7 +40,7 @@
 
     <target
 
-        android:animation="@animator/cross_to_tick"
+        android:animation="@anim/cross_to_tick"
 
         android:name="@string/name_cross"
 
@@ -50,7 +50,7 @@
 
     <target
 
-        android:animation="@animator/rotate_cross_to_tick"
+        android:animation="@anim/rotate_cross_to_tick"
 
         android:name="@string/group_tickcross"
 

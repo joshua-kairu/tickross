@@ -27,6 +27,8 @@
 <vector
     xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     android:width="120dp"
 
     android:height="120dp"
@@ -34,6 +36,10 @@
     android:viewportWidth="@integer/viewport_width"
 
     android:viewportHeight="@integer/viewport_height"
+
+    app:vc_viewportWidth="@integer/viewport_width"
+
+    app:vc_viewportHeight="@integer/viewport_height"
 
     >
 
@@ -58,6 +64,14 @@
             android:strokeLineCap="round"
 
             android:strokeColor="@color/stroke_color"
+
+            app:vc_pathData="@string/path_cross"
+
+            app:vc_strokeWidth="@integer/stroke_width"
+
+            app:vc_strokeLineCap="round"
+
+            app:vc_strokeColor="@color/stroke_color"
 
             />
 
