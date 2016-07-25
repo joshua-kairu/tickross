@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <!--
 
  Tickross
@@ -21,17 +23,24 @@
 
  -->
 
-<resources>
+<!-- rotate the rotate left icon animation -->
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+<!-- 360 degrees counter clockwise -->
 
-        <item name="morphButtonStyle">@style/Widget.MorphButton</item>
+<objectAnimator
 
-    </style>
+    xmlns:android="http://schemas.android.com/apk/res/android"
 
-</resources>
+    android:propertyName="rotation"
+
+    android:valueType="floatType"
+
+    android:valueFrom="360"
+
+    android:valueTo="0"
+
+    android:duration="@integer/animation_duration"
+
+    android:interpolator="@android:interpolator/accelerate_decelerate"
+
+    />

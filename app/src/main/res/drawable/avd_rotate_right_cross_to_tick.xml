@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <!--
 
  Tickross
@@ -21,17 +23,41 @@
 
  -->
 
-<resources>
+<!-- The animation from cross to tick -->
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+<!--
 
-        <item name="morphButtonStyle">@style/Widget.MorphButton</item>
+morph cross to tick
+rotate them from left, ie. to right
 
-    </style>
+-->
 
-</resources>
+<animated-vector
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:drawable="@drawable/ic_cross"
+
+    >
+
+    <!-- morph cross to tick -->
+
+    <target
+
+        android:animation="@anim/cross_to_tick"
+
+        android:name="@string/name_cross"
+
+        />
+
+    <!-- rotate them from left, ie. to right -->
+
+    <target
+
+        android:animation="@anim/rotate_right"
+
+        android:name="@string/group_tickcross"
+
+        />
+
+</animated-vector>

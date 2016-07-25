@@ -23,34 +23,38 @@
 
  -->
 
-<!-- The animation from cross to tick -->
+<!-- The animation from tick to cross -->
+
+<!--
+
+morph tick to cross
+rotate left
+
+-->
 
 <animated-vector
 
     xmlns:android="http://schemas.android.com/apk/res/android"
 
-    android:drawable="@drawable/ic_cross"
+    android:drawable="@drawable/ic_tick"
 
     >
 
-    <!-- animate the change from cross to tick -->
-    <!-- rotate for flair -->
-
-    <!-- animate the change from cross to tick -->
+    <!-- morph tick to cross -->
 
     <target
 
-        android:animation="@anim/cross_to_tick"
+        android:animation="@anim/tick_to_cross"
 
-        android:name="@string/name_cross"
+        android:name="@string/name_tick"
 
         />
 
-    <!-- rotate for flair -->
+    <!-- rotate left -->
 
     <target
 
-        android:animation="@anim/rotate_cross_to_tick"
+        android:animation="@anim/rotate_left"
 
         android:name="@string/group_tickcross"
 

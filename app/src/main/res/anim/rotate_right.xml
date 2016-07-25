@@ -23,7 +23,9 @@
 
  -->
 
-<!-- rotate the tick to cross animation -->
+<!-- rotate the cross to tick animation -->
+
+<!-- from -180 to 0 -->
 
 <objectAnimator
 
@@ -33,9 +35,9 @@
 
     android:valueType="floatType"
 
-    android:valueFrom="0"
+    android:valueFrom="-180"
 
-    android:valueTo="180"
+    android:valueTo="0"
 
     android:duration="@integer/animation_duration"
 

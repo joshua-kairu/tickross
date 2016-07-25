@@ -25,7 +25,7 @@
 
 <!-- The main layout -->
 
-<FrameLayout
+<RelativeLayout
 
     xmlns:android="http://schemas.android.com/apk/res/android"
 
@@ -37,9 +37,9 @@
 
     android:layout_height="match_parent"
 
-    android:onClick="animate"
-
     tools:context=".MainActivity"
+
+    android:padding="@dimen/layout_padding"
 
     >
 
@@ -57,8 +57,62 @@
 
         app:srcCompat="@drawable/ic_tick"
 
+        android:layout_centerInParent="true"
+
         />
 
+    <!-- The button bar -->
 
+    <LinearLayout
 
-</FrameLayout>
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+
+        >
+
+        <!-- rotate left -->
+
+        <ImageButton
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:id="@+id/am_ib_rotate_left"
+
+            android:contentDescription="@string/content_description_button_rotate_left"
+
+            app:srcCompat="@drawable/avd_button_rotate_left"
+
+            android:layout_margin="@dimen/material_button_margin"
+
+            />
+
+        <!-- rotate right -->
+
+        <ImageButton
+
+            android:layout_width="0dp"
+
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+
+            android:id="@+id/am_ib_rotate_right"
+
+            android:contentDescription="@string/content_description_button_rotate_right"
+
+            app:srcCompat="@drawable/avd_button_rotate_right"
+
+            android:layout_margin="@dimen/material_button_margin"
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

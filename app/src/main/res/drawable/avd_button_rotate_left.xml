@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <!--
 
  Tickross
@@ -21,17 +23,37 @@
 
  -->
 
-<resources>
+<!--
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+animation of rotating to the left
+when the rotate left button is tapped
 
-        <item name="morphButtonStyle">@style/Widget.MorphButton</item>
+-->
 
-    </style>
+<animated-vector
 
-</resources>
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:drawable="@drawable/ic_rotate_left_black_24dp"
+
+    >
+
+    <!-- set targets -->
+
+    <!--
+
+    rotate left
+
+    -->
+
+    <!-- rotate left -->
+
+    <target
+
+        android:animation="@anim/rotate_left_button"
+
+        android:name="@string/group_button_rotate_left"
+
+        />
+
+</animated-vector>

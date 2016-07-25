@@ -23,7 +23,9 @@
 
  -->
 
-<!-- rotate the cross to tick animation -->
+<!-- rotate the rotate right icon animation -->
+
+<!-- 360 degrees clockwise -->
 
 <objectAnimator
 
@@ -33,9 +35,9 @@
 
     android:valueType="floatType"
 
-    android:valueFrom="-180"
+    android:valueFrom="0"
 
-    android:valueTo="0"
+    android:valueTo="360"
 
     android:duration="@integer/animation_duration"
 
